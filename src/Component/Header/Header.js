@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 function Header(props) {
     return (
         <header className="header_section">
@@ -33,6 +34,9 @@ function Header(props) {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to={"/contact"}>Contact</NavLink>
                             </li>
+
+                            <NavLink className="appointment-btn scrollto" to={"/appointment"}>Appointment</NavLink>
+
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
                                     <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style={{ enableBackground: 'new 0 0 456.029 456.029' }} xmlSpace="preserve">
@@ -94,6 +98,11 @@ function Header(props) {
                                     <i className="fa fa-search" aria-hidden="true" />
                                 </button>
                             </form>
+                            {/* <a href="./pages/appointment.html" className="appointment-btn scrollto"><span className="d-none d-md-inline">Make an</span>
+                                Appointment</a> */}
+                            <a href="#" className="appointment-btn scrollto">
+                                <span className="d-none d-md-inline">Login/ Signup</span>
+                            </a>
                         </ul>
                     </div>
                 </nav>
